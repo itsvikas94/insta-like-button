@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(139, 208, 231);
+    display: flex;
+   align-items: center;   /* _height (vertical) par center karne ke liye */
+   justify-content: center; /* width (horizontal) par center karne ke liye */
+    
+
+}
+.container{
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 5px;
+}
+.container i{
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform ease 0.4s;
+    opacity: 0;
+}
+.container p{
+    padding: 10px;
+    text-align: center;
+    color: rgb(13, 16, 216);
+    font-size: 20px;
+}
